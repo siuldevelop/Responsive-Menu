@@ -1,4 +1,5 @@
 # 📱 Responsive Menu
+Open on Github pages https://siuldevelop.github.io/Responsive-Menu/
 
 A simple responsive hamburger menu built with **HTML, CSS, and JavaScript**.  
 The menu adapts to different screen sizes and closes automatically when the user clicks outside of it.
@@ -21,4 +22,4 @@ The menu adapts to different screen sizes and closes automatically when the user
 - Event handling (click outside)
 
 ## ▶️ Run the project
-Just open `index.html` in your browser or github pages
+Just open `index.html` in your browser or github pages (https://siuldevelop.github.io/Responsive-Menu/)
