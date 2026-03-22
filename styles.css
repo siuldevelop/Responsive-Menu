@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+/*Navbar*/
+.navbar{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Boton hamburguesa*/
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.menu-toggle span{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+}
+
+/*Menu de navegacion*/
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-menu a:hover{
+    color: #4caf4c;
+}
+
+/*Contenido principal*/
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/*Media query para móviles*/
+
+@media (max-width: 768px){
+    .menu-toggle{
+        display: flex;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav-menu.active{
+        display: flex;
+    }
+
+    .nav-menu li{
+        border-top: 1px solid #444;
+    }
+
+    .nav-menu a{
+        display: block;
+        padding: 1rem;
+    }
+
+    .navbar{
+        position: relative;
+    }
+}
+
